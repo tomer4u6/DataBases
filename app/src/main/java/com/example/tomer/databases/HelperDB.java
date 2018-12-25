@@ -5,11 +5,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class HelperDB extends SQLiteOpenHelper {
-    private static final String DATABAS_NAME = "dbexam.db";
+    private static final String DATABASE_NAME = "dbexam.db";
     private static int DATABASE_VERSION = 1000;
     String strCreate,strDelete;
     public HelperDB(Context context) {
-        super(context, DATABAS_NAME, null, DATABASE_VERSION);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
 
     }
 
@@ -18,7 +18,7 @@ public class HelperDB extends SQLiteOpenHelper {
         strCreate="CREATE TABLE "+Student.TABLE_STUDENT;
         strCreate+=" ("+Student.KEY_ID+" INTEGER PRIMARY KEY,";
         strCreate+=" "+Student.FULL_NAME+" TEXT,";
-        strCreate+=" "+Student.ID_NUMBER+" TEXT,";
+        strCreate+=" "+Student.ID_NUMBER+" TEXT";
         strCreate+=");";
         sqLiteDatabase.execSQL(strCreate);
 

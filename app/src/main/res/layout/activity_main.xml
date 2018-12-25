@@ -58,7 +58,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:textAllCaps="false"
-                android:onClick="getData1"
+                android:onClick="getDataStudent"
                 android:text="Enter data" />
 
         </LinearLayout>
@@ -128,7 +128,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Enter data"
-                android:onClick="getData2"
+                android:onClick="getDataStudentInfo"
                 android:textAllCaps="false"
                 />
         </LinearLayout>

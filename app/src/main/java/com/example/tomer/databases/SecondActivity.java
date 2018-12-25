@@ -55,7 +55,7 @@ public class SecondActivity extends AppCompatActivity {
                     while(!c.isAfterLast()){
                         String fullname = c.getString(col2);
                         String idnumber = c.getString(col3);
-                        tbl.add(fullname+"|"+idnumber);
+                        tbl.add(fullname+" | "+idnumber);
                         c.moveToNext();
                     }
                     c.close();
@@ -75,7 +75,7 @@ public class SecondActivity extends AppCompatActivity {
                         String fulladdress = c.getString(col2);
                         String phonenumber = c.getString(col3);
                         String birthdate = c.getString(col4);
-                        tbl.add(fulladdress+"|"+phonenumber+"|"+birthdate);
+                        tbl.add(fulladdress+" | "+phonenumber+" | "+birthdate);
                         c.moveToNext();
                     }
                     c.close();

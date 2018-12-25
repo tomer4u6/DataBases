@@ -1,4 +1,4 @@
-//Version 1011
+//Version 1012
 package com.example.tomer.databases;
 
 import android.content.ContentValues;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         String st = item.getTitle().toString();
         if(st.equals("Credits")){
-            Toast.makeText(this, "This app was created by Tomer Ben Ari", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "App was created by Tomer Ben Ari", Toast.LENGTH_SHORT).show();
         }
         if (st.equals("Change Activity")){
             Intent t = new Intent(this, SecondActivity.class);

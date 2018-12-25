@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DataBases</string>
+    <string-array name="spinner_items">
+        <item>Student table</item>
+        <item>StudentInfo table</item>
+    </string-array>
 </resources>
